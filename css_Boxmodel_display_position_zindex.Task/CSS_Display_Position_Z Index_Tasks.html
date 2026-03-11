@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Display and Position Tasks</title>
+
+<style>
+
+.block div{
+display:block;
+background:lightblue;
+margin:5px;
+}
+
+
+.inline div{
+display:inline;
+background:lightgreen;
+margin:5px;
+}
+
+
+.inlineblock div{
+display:inline-block;
+width:120px;
+height:60px;
+background:orange;
+margin:5px;
+text-align:center;
+line-height:60px;
+}
+
+
+
+.hide{
+display:none;
+}
+
+
+
+
+.container{
+height:200px;
+border:2px solid black;
+position:relative;
+margin-top:20px;
+}
+
+.static{
+background:lightpink;
+padding:10px;
+}
+
+.relative{
+position:relative;
+top:20px;
+left:20px;
+background:lightyellow;
+padding:10px;
+}
+
+.absolute{
+position:absolute;
+bottom:0;
+right:0;
+background:lightcoral;
+padding:10px;
+}
+
+
+
+
+
+.sticky{
+position:sticky;
+top:0;
+background:purple;
+color:white;
+padding:10px;
+}
+.fixed {
+position:fixed;
+top:10px;
+right:10px;
+background:rgb(161, 162, 78);
+color:white;
+padding:10px;
+}
+
+.dropdown { 
+  position: relative; 
+  display: block; 
+} 
+ 
+.dropbtn { 
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 16px 20px; 
+  font-size: 16px; 
+  border: none; 
+   
+} 
+ 
+.dropdown-content { 
+  display: none; 
+  position: absolute; 
+  background-color: #f9f9f9; 
+  min-width: 160px; 
+
+  z-index: 1; 
+} 
+ 
+ 
+.dropdown-content a { 
+  color: black; 
+  padding: 12px 16px; 
+  text-decoration: none; 
+  display: block; 
+} 
+ 
+.dropdown-content a:hover { 
+  background-color: #5586a4; 
+} 
+.dropdown:hover .dropdown-content { 
+  display: block; 
+} 
+ 
+
+ 
+.dropdown:hover .dropbtn { 
+  background-color: #67123a; 
+} 
+
+</style>
+</head>
+
+<body>
+
+
+
+
+<h2>Display Basics:</h2>
+BLOCK:
+<div class="block">
+<div>Project 1</div>
+<div> Project 2</div>
+
+<div>Project 3</div>
+</div><BR>
+INLINE:
+
+<div class="inline">
+<div>Project 1</div>
+<div>Project 2</div>
+<div>Project 3</div>
+</div>
+<BR>
+INLINEBLOCK:
+
+<div class="inlineblock">
+<div>Project 1</div>
+<div>Project 2</div>
+<div>Project 3</div>
+</div>
+
+
+
+<h2>Hidden Element:</h2>
+<p class="hide">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi ea et deserunt voluptatum molestiae, soluta, adipisci harum inventore recusandae animi ipsa culpa laborum eos temporibus veniam delectus tempora rerum!
+</p>
+
+
+<h2>Position Basics:</h2>
+
+<div class="container">
+
+<div class="static">
+This is a one website(static)
+</div>
+
+<div class="relative">
+It has lot of coding(relative)
+</div>
+
+<div class="absolute">
+used for students(absolute)
+</div>
+
+<br>
+<br>
+
+<div class="sticky">
+It  is the one software app
+</div>
+
+
+<div class="fixed">
+It used to solve a project 
+</div>
+
+</div>
+
+
+<h2> Mini Project:</h2>
+
+<div class="dropdown"> 
+  <button class="dropbtn">Menu</button> 
+  <div class="dropdown-content"> 
+    <a href="#">Home</a> 
+    <a href="#">About </a> 
+    <a href="#">Contact</a> 
+  </div> 
+
+
+
+
+</body>
+</html>
